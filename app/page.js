@@ -19,7 +19,7 @@ const SmoothScroll = dynamic(() => import('@/components/portfolio/SmoothScroll')
 
 function App() {
   return (
-    <main className="relative bg-[#050505] text-white min-h-screen overflow-hidden">
+    <main className="relative bg-[#0A0A0A] text-white min-h-screen overflow-hidden">
       <LoadingScreen />
       <SmoothScroll />
       <CustomCursor />

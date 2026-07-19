@@ -16,7 +16,7 @@ export default function LoadingScreen() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8 }}
-          className="fixed inset-0 z-[999] bg-[#050505] flex items-center justify-center"
+          className="fixed inset-0 z-[999] bg-[#0A0A0A] flex items-center justify-center"
         >
           <div className="flex flex-col items-center gap-6">
             <motion.div
@@ -28,10 +28,10 @@ export default function LoadingScreen() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-0 rounded-2xl border-2 border-transparent border-t-[#00E5FF] border-r-[#7B61FF]"
+                className="absolute inset-0 rounded-2xl border-2 border-transparent border-t-[#D4AF37] border-r-[#7C3AED]"
               />
-              <div className="absolute inset-2 rounded-xl bg-gradient-to-br from-[#00E5FF]/20 to-[#7B61FF]/20 border border-white/10 flex items-center justify-center">
-                <div className="h-2 w-2 rounded-full bg-[#00FFB3] animate-pulse" />
+              <div className="absolute inset-2 rounded-xl bg-gradient-to-br from-[#D4AF37]/20 to-[#7C3AED]/20 border border-white/10 flex items-center justify-center">
+                <div className="h-2 w-2 rounded-full bg-[#F4D97C] animate-pulse" />
               </div>
             </motion.div>
             <div className="text-xs tracking-[0.4em] text-[#A8A8A8] uppercase">Loading experience</div>

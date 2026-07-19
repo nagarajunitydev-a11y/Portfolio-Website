@@ -29,8 +29,8 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen w-full overflow-hidden">
       {/* Backgrounds */}
       <div className="absolute inset-0 grid-bg opacity-40" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,229,255,0.12),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(123,97,255,0.15),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212, 175, 55,0.12),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(124, 58, 237,0.15),transparent_50%)]" />
       <ParticleField />
 
       <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 max-w-7xl mx-auto pt-32 pb-20">
@@ -41,8 +41,8 @@ export default function Hero() {
           className="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full glass mb-8"
         >
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FFB3] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00FFB3]" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F4D97C] opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F4D97C]" />
           </span>
           <span className="text-xs text-[#A8A8A8] tracking-wider uppercase">
             Available for select projects
@@ -77,18 +77,19 @@ export default function Hero() {
         >
           <a
             href="#portfolio"
-            data-cursor="hover"
-            className="group relative inline-flex items-center gap-2 px-7 py-4 rounded-full bg-gradient-to-r from-[#00E5FF] to-[#7B61FF] text-black font-semibold overflow-hidden"
-            style={{ boxShadow: '0 10px 40px rgba(0, 229, 255, 0.3)' }}
+            data-cursor-text="Explore"
+            className="btn-luxury group relative inline-flex items-center gap-2 px-7 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black font-semibold overflow-hidden tracking-tight"
+            style={{ boxShadow: '0 12px 50px rgba(212, 175, 55, 0.35)' }}
           >
             <span className="relative z-10">Explore My Work</span>
             <Sparkles size={18} className="relative z-10" />
-            <span className="absolute inset-0 bg-gradient-to-r from-[#00FFB3] to-[#00E5FF] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </a>
           <a
             href={PROFILE.resume}
-            data-cursor="hover"
-            className="group inline-flex items-center gap-2 px-7 py-4 rounded-full glass border border-white/10 text-white font-medium hover:border-[#00E5FF]/50 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor-text="Download"
+            className="btn-luxury group inline-flex items-center gap-2 px-7 py-4 rounded-full glass border border-white/10 text-white font-medium hover:border-[#D4AF37]/60 hover:text-[#F4D97C] transition-all"
           >
             <Download size={18} />
             <span>Download Resume</span>
@@ -128,7 +129,7 @@ export default function Hero() {
           transition={{ duration: 2, repeat: Infinity }}
           className="w-6 h-10 rounded-full border border-white/20 flex items-start justify-center pt-2"
         >
-          <div className="w-1 h-2 bg-[#00E5FF] rounded-full" />
+          <div className="w-1 h-2 bg-[#D4AF37] rounded-full" />
         </motion.div>
       </motion.div>
 
@@ -137,7 +138,7 @@ export default function Hero() {
         <div className="flex marquee gap-12 whitespace-nowrap">
           {[...TECH_STACK, ...TECH_STACK].map((t, i) => (
             <span key={i} className="text-sm text-[#A8A8A8] hover:text-white transition-colors flex items-center gap-3">
-              <span className="h-1 w-1 rounded-full bg-[#00E5FF]" />
+              <span className="h-1 w-1 rounded-full bg-[#D4AF37]" />
               {t}
             </span>
           ))}

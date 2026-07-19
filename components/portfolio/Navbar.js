@@ -42,9 +42,9 @@ export default function Navbar() {
           }`}
           style={scrolled ? { padding: '0.75rem 1.5rem' } : {}}
         >
-          <a href="#home" className="flex items-center gap-2 group" data-cursor="hover">
-            <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-[#00E5FF] via-[#7B61FF] to-[#00FFB3] p-[1.5px]">
-              <div className="h-full w-full rounded-[10px] bg-[#0a0a0a] flex items-center justify-center font-bold text-white text-sm">
+          <a href="#home" className="flex items-center gap-2 group" data-cursor-text="Open">
+            <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-[#D4AF37] via-[#7C3AED] to-[#F4D97C] p-[1.5px]">
+              <div className="h-full w-full rounded-[10px] bg-[#0A0A0A] flex items-center justify-center font-bold text-white text-sm">
                 {'{L}'}
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                data-cursor="hover"
+                data-cursor-text="Open"
                 className={`relative px-4 py-2 text-sm rounded-full transition-colors ${
                   active === link.href ? 'text-white' : 'text-[#A8A8A8] hover:text-white'
                 }`}
@@ -78,11 +78,11 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#contact"
-              data-cursor="hover"
-              className="relative group px-5 py-2 text-sm rounded-full bg-gradient-to-r from-[#00E5FF] to-[#7B61FF] text-black font-medium overflow-hidden"
+              data-cursor-text="Open"
+              className="relative group px-5 py-2 text-sm rounded-full bg-gradient-to-r from-[#D4AF37] to-[#7C3AED] text-black font-medium overflow-hidden"
             >
               <span className="relative z-10">Let&apos;s Talk</span>
-              <span className="absolute inset-0 bg-gradient-to-r from-[#00FFB3] to-[#00E5FF] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="absolute inset-0 bg-gradient-to-r from-[#F4D97C] to-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
           </div>
 
@@ -120,7 +120,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 px-4 py-3 rounded-xl bg-gradient-to-r from-[#00E5FF] to-[#7B61FF] text-black font-medium text-center"
+                className="mt-2 px-4 py-3 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#7C3AED] text-black font-medium text-center"
               >
                 Let&apos;s Talk
               </a>

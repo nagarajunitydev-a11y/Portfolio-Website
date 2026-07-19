@@ -23,18 +23,18 @@ export default function About() {
             className="lg:col-span-4"
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass-strong border-glow">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00E5FF]/20 via-[#7B61FF]/10 to-[#00FFB3]/20" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/20 via-[#7C3AED]/10 to-[#F4D97C]/20" />
               <div className="absolute inset-0 grid-bg opacity-30" />
               <div className="absolute inset-0 flex items-end p-6">
                 <div>
                   <div className="text-xs text-[#A8A8A8] uppercase tracking-widest mb-2">Profile</div>
                   <div className="text-2xl font-bold text-white">{PROFILE.fullName}</div>
-                  <div className="text-sm text-[#00E5FF]">{PROFILE.title}</div>
+                  <div className="text-sm text-[#D4AF37]">{PROFILE.title}</div>
                   <div className="text-xs text-[#A8A8A8] mt-2">{PROFILE.location}</div>
                 </div>
               </div>
-              <div className="absolute top-6 right-6 h-16 w-16 rounded-full bg-gradient-to-br from-[#00E5FF] to-[#7B61FF] opacity-70 blur-xl animate-pulse-slow" />
-              <div className="absolute top-1/2 left-4 h-24 w-24 rounded-full bg-[#00FFB3]/40 blur-2xl animate-float" />
+              <div className="absolute top-6 right-6 h-16 w-16 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#7C3AED] opacity-70 blur-xl animate-pulse-slow" />
+              <div className="absolute top-1/2 left-4 h-24 w-24 rounded-full bg-[#F4D97C]/40 blur-2xl animate-float" />
             </div>
           </motion.div>
 
@@ -48,7 +48,7 @@ export default function About() {
               className="text-lg md:text-xl text-white/90 leading-relaxed"
             >
               I&apos;m a multi-disciplinary technologist with 9+ years of experience shipping products across{' '}
-              <span className="text-[#00E5FF]">XR</span>, <span className="text-[#7B61FF]">AI</span>, and the modern web.
+              <span className="text-[#D4AF37]">XR</span>, <span className="text-[#7C3AED]">AI</span>, and the modern web.
               My work spans Fortune 500 clients, funded startups, and personal experiments — always with an obsession
               for craft.
             </motion.p>
@@ -72,7 +72,7 @@ export default function About() {
                   transition={{ delay: i * 0.08, duration: 0.5 }}
                   className="relative rounded-2xl glass border-glow p-5 hover:bg-white/[0.03] transition-colors"
                 >
-                  <div className="text-xs text-[#00E5FF] uppercase tracking-widest mb-2">0{i + 1}</div>
+                  <div className="text-xs text-[#D4AF37] uppercase tracking-widest mb-2">0{i + 1}</div>
                   <div className="text-white font-semibold text-lg">{v.title}</div>
                   <div className="text-sm text-[#A8A8A8] mt-1">{v.text}</div>
                 </motion.div>

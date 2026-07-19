@@ -26,7 +26,7 @@ export default function Skills() {
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-white font-semibold text-lg">{group.name}</h3>
                 <div className="h-px flex-1 mx-4 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-                <span className="text-xs text-[#00E5FF]">0{gi + 1}</span>
+                <span className="text-xs text-[#D4AF37]">0{gi + 1}</span>
               </div>
               <div className="space-y-4">
                 {group.skills.map((s, i) => (
@@ -41,8 +41,8 @@ export default function Skills() {
                         whileInView={{ width: `${s.level}%` }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 + i * 0.06, duration: 1, ease: 'easeOut' }}
-                        className="h-full rounded-full bg-gradient-to-r from-[#00E5FF] via-[#7B61FF] to-[#00FFB3]"
-                        style={{ boxShadow: '0 0 12px rgba(0,229,255,0.5)' }}
+                        className="h-full rounded-full bg-gradient-to-r from-[#D4AF37] via-[#7C3AED] to-[#F4D97C]"
+                        style={{ boxShadow: '0 0 12px rgba(212, 175, 55,0.5)' }}
                       />
                     </div>
                   </div>

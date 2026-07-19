@@ -5,14 +5,14 @@ import * as THREE from 'three'
 
 function Particles({ count = 2500 }) {
   const mesh = useRef()
-  const light = useRef()
 
   const [positions, colors] = useMemo(() => {
     const p = new Float32Array(count * 3)
     const c = new Float32Array(count * 3)
-    const cyan = new THREE.Color('#00E5FF')
-    const purple = new THREE.Color('#7B61FF')
-    const green = new THREE.Color('#00FFB3')
+    const gold = new THREE.Color('#D4AF37')
+    const goldLight = new THREE.Color('#F4D97C')
+    const purple = new THREE.Color('#7C3AED')
+    const violet = new THREE.Color('#A78BFA')
     for (let i = 0; i < count; i++) {
       const r = 6 + Math.random() * 6
       const theta = Math.random() * Math.PI * 2
@@ -21,7 +21,7 @@ function Particles({ count = 2500 }) {
       p[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta)
       p[i * 3 + 2] = r * Math.cos(phi)
       const pick = Math.random()
-      const col = pick < 0.5 ? cyan : pick < 0.85 ? purple : green
+      const col = pick < 0.4 ? gold : pick < 0.65 ? goldLight : pick < 0.9 ? purple : violet
       c[i * 3 + 0] = col.r
       c[i * 3 + 1] = col.g
       c[i * 3 + 2] = col.b
@@ -67,11 +67,11 @@ function Sphere() {
     <mesh ref={ref}>
       <icosahedronGeometry args={[2.2, 4]} />
       <meshStandardMaterial
-        color="#00E5FF"
-        emissive="#7B61FF"
-        emissiveIntensity={0.4}
-        roughness={0.35}
-        metalness={0.9}
+        color="#D4AF37"
+        emissive="#7C3AED"
+        emissiveIntensity={0.5}
+        roughness={0.3}
+        metalness={0.95}
         wireframe
       />
     </mesh>
@@ -87,8 +87,8 @@ export default function ParticleField() {
         gl={{ antialias: true, alpha: true }}
       >
         <ambientLight intensity={0.4} />
-        <pointLight position={[10, 10, 10]} intensity={1.2} color="#00E5FF" />
-        <pointLight position={[-10, -10, -10]} intensity={0.8} color="#7B61FF" />
+        <pointLight position={[10, 10, 10]} intensity={1.4} color="#D4AF37" />
+        <pointLight position={[-10, -10, -10]} intensity={0.9} color="#7C3AED" />
         <Suspense fallback={null}>
           <Sphere />
           <Particles count={2200} />

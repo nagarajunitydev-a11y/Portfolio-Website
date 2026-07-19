@@ -11,8 +11,8 @@ export default function SectionHeader({ eyebrow, title, subtitle, align = 'left'
         transition={{ duration: 0.5 }}
         className="inline-flex items-center gap-2 mb-4"
       >
-        <span className="h-px w-8 bg-gradient-to-r from-[#00E5FF] to-transparent" />
-        <span className="text-xs tracking-[0.3em] uppercase text-[#00E5FF] font-medium">{eyebrow}</span>
+        <span className="h-px w-8 bg-gradient-to-r from-[#D4AF37] to-transparent" />
+        <span className="text-xs tracking-[0.3em] uppercase text-[#D4AF37] font-medium">{eyebrow}</span>
       </motion.div>
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
