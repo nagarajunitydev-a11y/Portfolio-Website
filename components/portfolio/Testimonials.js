@@ -20,7 +20,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="relative py-32 px-6">
       <div className="relative max-w-5xl mx-auto">
-        <SectionHeader eyebrow="Testimonials" title="Kind words from clients." align="center" />
+        <SectionHeader eyebrow="Testimonials" title="What clients say about our team." align="center" />
 
         <div className="mt-16 relative">
           <div className="absolute -top-20 left-1/2 -translate-x-1/2 opacity-10">

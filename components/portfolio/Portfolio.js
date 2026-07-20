@@ -19,8 +19,8 @@ export default function Portfolio() {
       <div className="relative max-w-7xl mx-auto">
         <SectionHeader
           eyebrow="Portfolio"
-          title="Selected works."
-          subtitle="A curated selection of recent projects across XR, AI, Web, Mobile, 3D and automation."
+          title="Selected works from our team."
+          subtitle="A curated selection of recent projects across AI, enterprise software, WebXR, automotive, architecture, film and industrial."
         />
 
         <div className="mt-10 flex flex-wrap gap-2 justify-start">

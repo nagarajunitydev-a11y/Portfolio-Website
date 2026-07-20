@@ -5,11 +5,13 @@ import ScrollProgress from '@/components/portfolio/ScrollProgress'
 import Hero from '@/components/portfolio/Hero'
 import About from '@/components/portfolio/About'
 import Services from '@/components/portfolio/Services'
-import Highlights from '@/components/portfolio/Highlights'
+import Technology from '@/components/portfolio/Technology'
+import Industries from '@/components/portfolio/Industries'
 import Portfolio from '@/components/portfolio/Portfolio'
-import Skills from '@/components/portfolio/Skills'
-import Experience from '@/components/portfolio/Experience'
+import Highlights from '@/components/portfolio/Highlights'
+import Process from '@/components/portfolio/Process'
 import Testimonials from '@/components/portfolio/Testimonials'
+import CTA from '@/components/portfolio/CTA'
 import Contact from '@/components/portfolio/Contact'
 import Footer from '@/components/portfolio/Footer'
 import BackToTop from '@/components/portfolio/BackToTop'
@@ -27,11 +29,13 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <Highlights />
+      <Technology />
+      <Industries />
       <Portfolio />
-      <Skills />
-      <Experience />
+      <Highlights />
+      <Process />
       <Testimonials />
+      <CTA />
       <Contact />
       <Footer />
       <BackToTop />

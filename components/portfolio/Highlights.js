@@ -5,13 +5,13 @@ import { HIGHLIGHTS } from '@/lib/portfolio/data'
 
 export default function Highlights() {
   return (
-    <section id="highlights" className="relative py-32 px-6">
+    <section id="why" className="relative py-32 px-6">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.06),transparent_60%)]" />
       <div className="relative max-w-7xl mx-auto">
         <SectionHeader
-          eyebrow="Why Work With Me"
-          title="Experience that shows in every frame."
-          subtitle="A summary of what you get when you partner — built on 16+ years of hands-on CGI production and delivery."
+          eyebrow="Why Choose Us"
+          title="Built for enterprise-grade delivery."
+          subtitle="What our clients get when they partner with our team — grounded in 15+ years of collective engineering and creative production."
         />
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">

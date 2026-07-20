@@ -47,7 +47,7 @@ export default function Contact() {
         <SectionHeader
           eyebrow="Contact"
           title="Let's build something extraordinary."
-          subtitle="Have a project in mind or just want to say hi? Drop a message — I typically respond within 24 hours."
+          subtitle="Have a project in mind or want to say hi? Drop a message — our team typically responds within 24 hours."
         />
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-6">

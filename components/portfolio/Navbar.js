@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-import { NAV_LINKS, PROFILE } from '@/lib/portfolio/data'
+import { NAV_LINKS, STUDIO } from '@/lib/portfolio/data'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -49,18 +49,17 @@ export default function Navbar() {
               </div>
             </div>
             <span className="font-semibold tracking-tight text-white hidden sm:block">
-              {PROFILE.fullName}
+              {STUDIO.name}
             </span>
           </a>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-
-                className={`relative px-4 py-2 text-sm rounded-full transition-colors ${
-                  active === link.href ? 'text-white' : 'text-[#A8A8A8] hover:text-white'
+                className={`relative px-3.5 py-2 text-[13px] rounded-full transition-colors ${
+                  active === link.href ? 'text-white' : 'text-[#A0A0A0] hover:text-white'
                 }`}
               >
                 {active === link.href && (
@@ -78,16 +77,14 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#contact"
-
-              className="relative group px-5 py-2 text-sm rounded-full bg-gradient-to-r from-[#D4AF37] to-[#7C3AED] text-black font-medium overflow-hidden"
+              className="btn-luxury relative group px-5 py-2 text-sm rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black font-semibold overflow-hidden"
             >
               <span className="relative z-10">Let&apos;s Talk</span>
-              <span className="absolute inset-0 bg-gradient-to-r from-[#F4D97C] to-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
           </div>
 
           <button
-            className="md:hidden text-white p-2"
+            className="lg:hidden text-white p-2"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -102,7 +99,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="fixed top-20 left-4 right-4 z-40 md:hidden glass-strong rounded-2xl p-4"
+            className="fixed top-20 left-4 right-4 z-40 lg:hidden glass-strong rounded-2xl p-4"
           >
             <nav className="flex flex-col gap-1">
               {NAV_LINKS.map((link) => (
@@ -111,7 +108,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className={`px-4 py-3 rounded-xl text-sm ${
-                    active === link.href ? 'bg-white/5 text-white' : 'text-[#A8A8A8]'
+                    active === link.href ? 'bg-white/5 text-white' : 'text-[#A0A0A0]'
                   }`}
                 >
                   {link.name}
@@ -120,7 +117,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 px-4 py-3 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#7C3AED] text-black font-medium text-center"
+                className="mt-2 px-4 py-3 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black font-semibold text-center"
               >
                 Let&apos;s Talk
               </a>
