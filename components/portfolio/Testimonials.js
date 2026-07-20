@@ -64,7 +64,7 @@ export default function Testimonials() {
           <div className="mt-8 flex items-center justify-center gap-4">
             <button
               onClick={prev}
-              data-cursor-text="Swipe"
+
               className="h-11 w-11 rounded-full glass border border-white/10 flex items-center justify-center text-white hover:border-[#D4AF37]/40 transition-colors"
               aria-label="Previous"
             >
@@ -84,7 +84,7 @@ export default function Testimonials() {
             </div>
             <button
               onClick={next}
-              data-cursor-text="Swipe"
+
               className="h-11 w-11 rounded-full glass border border-white/10 flex items-center justify-center text-white hover:border-[#D4AF37]/40 transition-colors"
               aria-label="Next"
             >

@@ -32,7 +32,6 @@ export default function Services() {
                 className={`group relative rounded-3xl glass border-glow p-7 overflow-hidden hover:-translate-y-1.5 transition-all duration-500 ${
                   is3D ? 'ring-1 ring-[#D4AF37]/25' : ''
                 }`}
-                data-cursor-text={is3D ? '' : 'View'}
               >
                 <div className="absolute -top-20 -right-20 h-48 w-48 rounded-full bg-gradient-to-br from-[#D4AF37]/25 to-[#7C3AED]/15 blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
                 {is3D && (
@@ -75,12 +74,12 @@ export default function Services() {
                       href={CONFIGURATOR_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      data-cursor-text="Launch"
-                      className="btn-luxury mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black font-semibold text-sm tracking-tight glow-gold hover:from-[#F4D97C] hover:to-[#D4AF37] transition-all"
+                      aria-label="Launch 3D Configurator (opens in new tab)"
+                      className="btn-luxury mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black font-semibold text-sm tracking-tight glow-gold hover:shadow-[0_18px_60px_rgba(212,175,55,0.55)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-300 will-change-transform"
                     >
-                      <Rocket size={16} />
+                      <Rocket size={16} className="transition-transform duration-500 group-hover:rotate-12" />
                       <span className="relative z-10">Launch 3D Configurator</span>
-                      <ArrowUpRight size={14} className="relative z-10" />
+                      <ArrowUpRight size={14} className="relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
                   )}
                 </div>

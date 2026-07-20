@@ -14,7 +14,6 @@ import Footer from '@/components/portfolio/Footer'
 import BackToTop from '@/components/portfolio/BackToTop'
 import LoadingScreen from '@/components/portfolio/LoadingScreen'
 
-const CustomCursor = dynamic(() => import('@/components/portfolio/CustomCursor'), { ssr: false })
 const SmoothScroll = dynamic(() => import('@/components/portfolio/SmoothScroll'), { ssr: false })
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
     <main className="relative bg-[#0A0A0A] text-white min-h-screen overflow-hidden">
       <LoadingScreen />
       <SmoothScroll />
-      <CustomCursor />
       <ScrollProgress />
       <Navbar />
       <Hero />

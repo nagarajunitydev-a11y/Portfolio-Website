@@ -77,7 +77,7 @@ export default function Hero() {
         >
           <a
             href="#portfolio"
-            data-cursor-text="Explore"
+
             className="btn-luxury group relative inline-flex items-center gap-2 px-7 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black font-semibold overflow-hidden tracking-tight"
             style={{ boxShadow: '0 12px 50px rgba(212, 175, 55, 0.35)' }}
           >
@@ -88,7 +88,7 @@ export default function Hero() {
             href={PROFILE.resume}
             target="_blank"
             rel="noopener noreferrer"
-            data-cursor-text="Download"
+
             className="btn-luxury group inline-flex items-center gap-2 px-7 py-4 rounded-full glass border border-white/10 text-white font-medium hover:border-[#D4AF37]/60 hover:text-[#F4D97C] transition-all"
           >
             <Download size={18} />

@@ -42,7 +42,7 @@ export default function Navbar() {
           }`}
           style={scrolled ? { padding: '0.75rem 1.5rem' } : {}}
         >
-          <a href="#home" className="flex items-center gap-2 group" data-cursor-text="Open">
+          <a href="#home" className="flex items-center gap-2 group">
             <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-[#D4AF37] via-[#7C3AED] to-[#F4D97C] p-[1.5px]">
               <div className="h-full w-full rounded-[10px] bg-[#0A0A0A] flex items-center justify-center font-bold text-white text-sm">
                 {'{L}'}
@@ -58,7 +58,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                data-cursor-text="Open"
+
                 className={`relative px-4 py-2 text-sm rounded-full transition-colors ${
                   active === link.href ? 'text-white' : 'text-[#A8A8A8] hover:text-white'
                 }`}
@@ -78,7 +78,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#contact"
-              data-cursor-text="Open"
+
               className="relative group px-5 py-2 text-sm rounded-full bg-gradient-to-r from-[#D4AF37] to-[#7C3AED] text-black font-medium overflow-hidden"
             >
               <span className="relative z-10">Let&apos;s Talk</span>

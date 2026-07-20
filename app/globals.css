@@ -62,10 +62,6 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    cursor: none;
-  }
-  @media (max-width: 768px) {
-    body { cursor: auto; }
   }
   ::-webkit-scrollbar {
     width: 8px;

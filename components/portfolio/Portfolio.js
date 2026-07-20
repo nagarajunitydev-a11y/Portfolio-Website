@@ -28,7 +28,7 @@ export default function Portfolio() {
             <button
               key={c}
               onClick={() => setFilter(c)}
-              data-cursor-text="Click"
+
               className={`relative px-4 py-2 rounded-full text-sm transition-all ${
                 filter === c
                   ? 'text-black font-semibold'
@@ -58,7 +58,7 @@ export default function Portfolio() {
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.5, delay: (i % 3) * 0.05 }}
                 className="group relative rounded-3xl overflow-hidden glass border-glow hover:-translate-y-1.5 transition-transform duration-500"
-                data-cursor-text="View"
+
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -80,7 +80,7 @@ export default function Portfolio() {
                         href={p.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        data-cursor-text="Visit"
+
                         className="h-11 w-11 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black flex items-center justify-center hover:scale-110 transition-transform"
                         aria-label="Live demo"
                       >
@@ -90,7 +90,7 @@ export default function Portfolio() {
                         href={p.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        data-cursor-text="Code"
+
                         className="h-11 w-11 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all backdrop-blur-md"
                         aria-label="Source code"
                       >
@@ -98,7 +98,7 @@ export default function Portfolio() {
                       </a>
                       <a
                         href="#"
-                        data-cursor-text="Read"
+
                         className="h-11 w-11 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all backdrop-blur-md"
                         aria-label="Case study"
                       >

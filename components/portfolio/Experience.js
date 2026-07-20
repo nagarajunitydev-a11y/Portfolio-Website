@@ -80,7 +80,7 @@ export default function Experience() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
                 className="group glass border-glow rounded-2xl p-5 block"
-                data-cursor-text="Read"
+
               >
                 <div className="flex items-start justify-between">
                   <Award className="text-[#F4D97C]" size={22} />

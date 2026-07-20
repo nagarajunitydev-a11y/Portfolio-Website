@@ -18,7 +18,7 @@ export default function BackToTop() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.5 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          data-cursor-text="Top"
+
           aria-label="Back to top"
           className="fixed bottom-6 right-6 z-40 h-12 w-12 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#7C3AED] text-black flex items-center justify-center shadow-lg"
           style={{ boxShadow: '0 10px 40px rgba(212, 175, 55,0.4)' }}

@@ -57,7 +57,7 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold text-white">Contact info</h3>
               <p className="text-sm text-[#A8A8A8] mt-2">Reach out through any of these channels.</p>
               <div className="mt-8 space-y-5">
-                <a href={`mailto:${PROFILE.email}`} className="flex items-center gap-4 group" data-cursor-text="Send">
+                <a href={`mailto:${PROFILE.email}`} className="flex items-center gap-4 group">
                   <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-[#D4AF37]/20 to-[#7C3AED]/20 border border-white/10 flex items-center justify-center text-[#D4AF37] group-hover:scale-110 transition-transform">
                     <Mail size={18} />
                   </div>
@@ -66,7 +66,7 @@ export default function Contact() {
                     <div className="text-white group-hover:text-[#D4AF37] transition-colors">{PROFILE.email}</div>
                   </div>
                 </a>
-                <a href={`tel:${PROFILE.phone}`} className="flex items-center gap-4 group" data-cursor-text="Send">
+                <a href={`tel:${PROFILE.phone}`} className="flex items-center gap-4 group">
                   <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-[#7C3AED]/20 to-[#F4D97C]/20 border border-white/10 flex items-center justify-center text-[#7C3AED] group-hover:scale-110 transition-transform">
                     <Phone size={18} />
                   </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                     key={label}
                     href={href}
                     aria-label={label}
-                    data-cursor-text="Send"
+
                     className="h-10 w-10 rounded-xl glass border border-white/10 flex items-center justify-center text-[#A8A8A8] hover:text-white hover:border-[#D4AF37]/40 transition-all"
                   >
                     <Icon size={16} />
@@ -110,7 +110,7 @@ export default function Contact() {
               <a
                 href={PROFILE.calendly}
                 className="glass border-glow rounded-2xl p-5 flex items-center gap-3 hover:bg-white/[0.03] transition-colors"
-                data-cursor-text="Send"
+
               >
                 <Calendar className="text-[#D4AF37]" size={18} />
                 <div>
@@ -121,7 +121,7 @@ export default function Contact() {
               <a
                 href={`https://wa.me/${PROFILE.whatsapp}`}
                 className="glass border-glow rounded-2xl p-5 flex items-center gap-3 hover:bg-white/[0.03] transition-colors"
-                data-cursor-text="Send"
+
               >
                 <MessageCircle className="text-[#F4D97C]" size={18} />
                 <div>
@@ -206,7 +206,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status === 'loading'}
-              data-cursor-text="Send"
+
               className="group relative w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#7C3AED] text-black font-semibold overflow-hidden disabled:opacity-70"
               style={{ boxShadow: '0 10px 40px rgba(212, 175, 55, 0.25)' }}
             >
