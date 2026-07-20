@@ -11,7 +11,7 @@ export default function Highlights() {
         <SectionHeader
           eyebrow="Why Choose Us"
           title="Built for enterprise-grade delivery."
-          subtitle="What our clients get when they partner with our team — grounded in 15+ years of collective engineering and creative production."
+          subtitle="What our clients get when they partner with our team — engineering excellence, creative production and end-to-end delivery."
         />
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">

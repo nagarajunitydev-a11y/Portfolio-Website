@@ -10,7 +10,6 @@ import Industries from '@/components/portfolio/Industries'
 import Portfolio from '@/components/portfolio/Portfolio'
 import Highlights from '@/components/portfolio/Highlights'
 import Process from '@/components/portfolio/Process'
-import Testimonials from '@/components/portfolio/Testimonials'
 import CTA from '@/components/portfolio/CTA'
 import Contact from '@/components/portfolio/Contact'
 import Footer from '@/components/portfolio/Footer'
@@ -34,7 +33,6 @@ function App() {
       <Portfolio />
       <Highlights />
       <Process />
-      <Testimonials />
       <CTA />
       <Contact />
       <Footer />
