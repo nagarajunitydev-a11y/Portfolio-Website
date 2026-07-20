@@ -1,7 +1,7 @@
 'use client'
 import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import { PROFILE, STATS, TECH_STACK } from '@/lib/portfolio/data'
 import { useEffect, useState } from 'react'
 
@@ -85,14 +85,10 @@ export default function Hero() {
             <Sparkles size={18} className="relative z-10" />
           </a>
           <a
-            href={PROFILE.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-
+            href="#contact"
             className="btn-luxury group inline-flex items-center gap-2 px-7 py-4 rounded-full glass border border-white/10 text-white font-medium hover:border-[#D4AF37]/60 hover:text-[#F4D97C] transition-all"
           >
-            <Download size={18} />
-            <span>Download Resume</span>
+            <span>Get In Touch</span>
           </a>
         </motion.div>
 

@@ -5,6 +5,7 @@ import ScrollProgress from '@/components/portfolio/ScrollProgress'
 import Hero from '@/components/portfolio/Hero'
 import About from '@/components/portfolio/About'
 import Services from '@/components/portfolio/Services'
+import Highlights from '@/components/portfolio/Highlights'
 import Portfolio from '@/components/portfolio/Portfolio'
 import Skills from '@/components/portfolio/Skills'
 import Experience from '@/components/portfolio/Experience'
@@ -26,6 +27,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Highlights />
       <Portfolio />
       <Skills />
       <Experience />

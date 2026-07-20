@@ -1,10 +1,8 @@
 'use client'
 import { motion } from 'framer-motion'
 import SectionHeader from './SectionHeader'
-import { SERVICES } from '@/lib/portfolio/data'
-import { ArrowUpRight, Rocket } from 'lucide-react'
-
-const CONFIGURATOR_URL = 'https://showroom-configurator.vercel.app/'
+import { SERVICE_CATEGORIES, CONFIGURATOR_URL } from '@/lib/portfolio/data'
+import { ArrowUpRight, Rocket, Check } from 'lucide-react'
 
 export default function Services() {
   return (
@@ -13,63 +11,72 @@ export default function Services() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_bottom,rgba(212,175,55,0.06),transparent_60%)]" />
       <div className="relative max-w-7xl mx-auto">
         <SectionHeader
-          eyebrow="Services"
+          eyebrow="CGI & VFX Services"
           title="What I build."
-          subtitle="Twelve deeply-crafted service lines — from immersive XR to autonomous AI agents, engineered to move real business metrics."
+          subtitle="Seven deeply-crafted service lines across automotive, XR, architecture, healthcare, film, technology and industrial — engineered for photorealism and real-time performance."
         />
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {SERVICES.map((s, i) => {
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {SERVICE_CATEGORIES.map((s, i) => {
             const Icon = s.icon
-            const is3D = s.title === '3D Configurator'
+            const isConfig = !!s.configurator
             return (
               <motion.div
                 key={s.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
-                transition={{ delay: (i % 3) * 0.08, duration: 0.6 }}
-                className={`group relative rounded-3xl glass border-glow p-7 overflow-hidden hover:-translate-y-1.5 transition-all duration-500 ${
-                  is3D ? 'ring-1 ring-[#D4AF37]/25' : ''
+                transition={{ delay: (i % 2) * 0.08, duration: 0.6 }}
+                className={`group relative rounded-3xl glass border-glow p-7 md:p-8 overflow-hidden hover:-translate-y-1.5 transition-all duration-500 ${
+                  isConfig ? 'ring-1 ring-[#D4AF37]/25' : ''
                 }`}
               >
-                <div className="absolute -top-20 -right-20 h-48 w-48 rounded-full bg-gradient-to-br from-[#D4AF37]/25 to-[#7C3AED]/15 blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
-                {is3D && (
-                  <div className="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[10px] uppercase tracking-widest text-[#F4D97C]">
+                <div className="absolute -top-24 -right-24 h-56 w-56 rounded-full bg-gradient-to-br from-[#D4AF37]/25 to-[#7C3AED]/15 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+
+                {isConfig && (
+                  <div className="absolute top-5 right-5 px-2.5 py-1 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[10px] uppercase tracking-widest text-[#F4D97C]">
                     Live Demo
                   </div>
                 )}
 
                 <div className="relative">
-                  <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-[#D4AF37] to-[#7C3AED] p-[1.5px]">
-                    <div className="h-full w-full rounded-[14px] bg-[#0A0A0A] flex items-center justify-center">
-                      <Icon className="text-[#F4D97C]" size={22} />
+                  <div className="flex items-start gap-4">
+                    <div className="shrink-0 h-14 w-14 rounded-2xl bg-gradient-to-br from-[#D4AF37] to-[#7C3AED] p-[1.5px]">
+                      <div className="h-full w-full rounded-[14px] bg-[#0A0A0A] flex items-center justify-center">
+                        <Icon className="text-[#F4D97C]" size={22} />
+                      </div>
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="text-lg md:text-xl font-semibold text-white tracking-tight flex items-start justify-between gap-2">
+                        <span className="leading-snug">{s.title}</span>
+                        {!isConfig && (
+                          <ArrowUpRight
+                            className="shrink-0 mt-1 text-[#A0A0A0] group-hover:text-[#F4D97C] group-hover:rotate-45 transition-all duration-500"
+                            size={18}
+                          />
+                        )}
+                      </h3>
+                      <p className="mt-2 text-sm text-[#A0A0A0] leading-relaxed">{s.description}</p>
                     </div>
                   </div>
 
-                  <h3 className="mt-5 text-xl font-semibold text-white flex items-center justify-between tracking-tight">
-                    {s.title}
-                    {!is3D && (
-                      <ArrowUpRight
-                        className="text-[#A0A0A0] group-hover:text-[#F4D97C] group-hover:rotate-45 transition-all duration-500"
-                        size={20}
-                      />
-                    )}
-                  </h3>
-                  <p className="mt-2 text-sm text-[#A0A0A0] leading-relaxed">{s.description}</p>
-
-                  <div className="mt-5 flex flex-wrap gap-1.5">
-                    {s.tech.map((t) => (
-                      <span
-                        key={t}
-                        className="text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/[0.03] border border-white/10 text-[#A0A0A0]"
-                      >
-                        {t}
-                      </span>
-                    ))}
+                  <div className="mt-6 pt-5 border-t border-white/5">
+                    <div className="text-[10px] uppercase tracking-[0.25em] text-[#F4D97C]/80 mb-4">Services</div>
+                    <ul className="grid grid-cols-1 gap-2">
+                      {s.services.map((svc) => (
+                        <li key={svc} className="flex items-start gap-2.5 text-sm text-white/85">
+                          <span className="mt-1 shrink-0 h-4 w-4 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#7C3AED] p-[1px]">
+                            <span className="flex items-center justify-center h-full w-full rounded-full bg-[#0A0A0A]">
+                              <Check size={9} className="text-[#F4D97C]" strokeWidth={3} />
+                            </span>
+                          </span>
+                          <span className="leading-snug">{svc}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
-                  {is3D && (
+                  {isConfig && (
                     <a
                       href={CONFIGURATOR_URL}
                       target="_blank"
