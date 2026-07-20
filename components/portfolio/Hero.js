@@ -94,24 +94,6 @@ export default function Hero() {
             <span>Schedule a Consultation</span>
           </a>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl"
-        >
-          {STATS.map((s, i) => (
-            <div key={i} className="glass rounded-2xl p-5">
-              <div className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-                <Counter to={s.value} suffix={s.suffix} />
-              </div>
-              <div className="text-xs md:text-sm text-[#A0A0A0] uppercase tracking-widest mt-1">
-                {s.label}
-              </div>
-            </div>
-          ))}
-        </motion.div>
       </div>
 
       <motion.div
