@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import BrandMark from './BrandMark'
 
 export default function LoadingScreen() {
   const [done, setDone] = useState(false)
@@ -34,6 +35,7 @@ export default function LoadingScreen() {
                 <div className="h-2 w-2 rounded-full bg-[#F4D97C] animate-pulse" />
               </div>
             </motion.div>
+            <BrandMark className="justify-center" />
             <div className="text-xs tracking-[0.4em] text-[#A8A8A8] uppercase">Loading experience</div>
           </div>
         </motion.div>

@@ -10,20 +10,25 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: '{FULL_NAME} — {TITLE} | Premium Portfolio',
-  description: '{ABOUT_SHORT} — A premium portfolio showcasing XR, AI, Web, Mobile, Cloud & 3D projects by {FULL_NAME}.',
-  keywords: ['{FULL_NAME}', 'XR Developer', 'AI Engineer', 'Full Stack', 'WebGL', 'Portfolio', '3D'],
-  authors: [{ name: '{FULL_NAME}' }],
+  title: 'Qvrix | AI, WebXR, Software & CGI Studio',
+  description: 'Qvrix builds AI-driven software, immersive WebXR experiences, and cinematic CGI for modern brands.',
+  keywords: ['Qvrix', 'AI Studio', 'WebXR', 'Software Development', 'CGI', 'Portfolio'],
+  authors: [{ name: 'Qvrix' }],
+  icons: {
+    icon: '/QvrixLogo.png',
+    shortcut: '/QvrixLogo.png',
+    apple: '/QvrixLogo.png',
+  },
   openGraph: {
-    title: '{FULL_NAME} — {TITLE}',
-    description: '{ABOUT_SHORT}',
+    title: 'Qvrix | AI, WebXR, Software & CGI Studio',
+    description: 'Qvrix builds AI-driven software, immersive WebXR experiences, and cinematic CGI for modern brands.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '{FULL_NAME} — {TITLE}',
-    description: '{ABOUT_SHORT}',
+    title: 'Qvrix | AI, WebXR, Software & CGI Studio',
+    description: 'Qvrix builds AI-driven software, immersive WebXR experiences, and cinematic CGI for modern brands.',
   },
   robots: {
     index: true,
@@ -36,6 +41,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`dark ${inter.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{__html:'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);'}} />
+        <link rel="icon" href="/QvrixLogo.png" sizes="any" />
+        <link rel="shortcut icon" href="/QvrixLogo.png" />
+        <meta name="theme-color" content="#0A0A0A" />
       </head>
       <body className={inter.className}>
         <Providers>{children}</Providers>

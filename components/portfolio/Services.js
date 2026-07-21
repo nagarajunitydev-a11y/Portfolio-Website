@@ -12,8 +12,8 @@ export default function Services() {
       <div className="relative max-w-7xl mx-auto">
         <SectionHeader
           eyebrow="CGI & VFX Services"
-          title="What I build."
-          subtitle="Seven deeply-crafted service lines across automotive, XR, architecture, healthcare, film, technology and industrial — engineered for photorealism and real-time performance."
+          title="Visual Experiences Without Limits."
+          subtitle="We transform ideas into breathtaking CGI and VFX experiences across automotive, architecture, XR, healthcare, film, technology, and industrial sectors—delivering cinematic quality, photorealistic precision, and real-time performance."
         />
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -2,7 +2,8 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-import { NAV_LINKS, STUDIO } from '@/lib/portfolio/data'
+import { NAV_LINKS } from '@/lib/portfolio/data'
+import BrandMark from './BrandMark'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -42,15 +43,8 @@ export default function Navbar() {
           }`}
           style={scrolled ? { padding: '0.75rem 1.5rem' } : {}}
         >
-          <a href="#home" className="flex items-center gap-2 group">
-            <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-[#D4AF37] via-[#7C3AED] to-[#F4D97C] p-[1.5px]">
-              <div className="h-full w-full rounded-[10px] bg-[#0A0A0A] flex items-center justify-center font-bold text-white text-sm">
-                {'{L}'}
-              </div>
-            </div>
-            <span className="font-semibold tracking-tight text-white hidden sm:block">
-              {STUDIO.name}
-            </span>
+          <a href="#home" className="flex items-center group">
+            <BrandMark className="transition-opacity group-hover:opacity-90" />
           </a>
 
           <nav className="hidden lg:flex items-center gap-1">

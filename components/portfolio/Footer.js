@@ -1,6 +1,7 @@
 'use client'
 import { STUDIO, NAV_LINKS } from '@/lib/portfolio/data'
 import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react'
+import BrandMark from './BrandMark'
 
 const FOOTER_LINKS = [
   { name: 'About', href: '#about' },
@@ -40,13 +41,8 @@ export default function Footer() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           <div className="col-span-2">
-            <a href="#home" className="flex items-center gap-2">
-              <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-[#D4AF37] via-[#7C3AED] to-[#F4D97C] p-[1.5px]">
-                <div className="h-full w-full rounded-[10px] bg-[#0A0A0A] flex items-center justify-center font-bold text-white text-sm">
-                  {'{L}'}
-                </div>
-              </div>
-              <span className="font-semibold tracking-tight text-white">{STUDIO.name}</span>
+            <a href="#home" className="inline-flex items-center">
+              <BrandMark className="justify-start" />
             </a>
             <p className="mt-4 text-sm text-[#A0A0A0] max-w-sm leading-relaxed">
               We build AI-powered software, immersive WebXR experiences and photorealistic CGI — for startups, enterprises and global brands.

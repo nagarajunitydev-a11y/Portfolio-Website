@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeader from './SectionHeader'
 import { PROFILE } from '@/lib/portfolio/data'
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, Check, Loader2, MessageCircle, Calendar } from 'lucide-react'
+import { Mail, Phone, Github, Linkedin, Twitter, Send, Check, Loader2, MessageCircle, Calendar } from 'lucide-react'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
@@ -75,15 +75,7 @@ export default function Contact() {
                     <div className="text-white group-hover:text-[#7C3AED] transition-colors">{PROFILE.phone}</div>
                   </div>
                 </a>
-                <div className="flex items-center gap-4">
-                  <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-[#F4D97C]/20 to-[#D4AF37]/20 border border-white/10 flex items-center justify-center text-[#F4D97C]">
-                    <MapPin size={18} />
-                  </div>
-                  <div>
-                    <div className="text-xs uppercase tracking-widest text-[#A8A8A8]">Location</div>
-                    <div className="text-white">{PROFILE.location}</div>
-                  </div>
-                </div>
+                {/* Location removed per request */}
               </div>
 
               <div className="mt-8 flex items-center gap-3">
@@ -131,16 +123,7 @@ export default function Contact() {
               </a>
             </div>
 
-            {/* Map placeholder */}
-            <div className="relative rounded-3xl overflow-hidden glass border-glow h-48">
-              <div className="absolute inset-0 grid-bg opacity-40" />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 via-transparent to-[#7C3AED]/10" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-                <MapPin className="text-[#D4AF37]" size={28} />
-                <div className="text-sm text-white">{PROFILE.location}</div>
-                <div className="text-xs text-[#A8A8A8]">{'{MAP_EMBED}'}</div>
-              </div>
-            </div>
+            {/* Map embed and location section removed per request */}
           </div>
 
           {/* Form */}

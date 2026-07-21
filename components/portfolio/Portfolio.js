@@ -67,6 +67,16 @@ export default function Portfolio() {
                     alt={p.title}
                     className="w-full h-full object-cover transition-transform duration-[900ms] group-hover:scale-110"
                     loading="lazy"
+                    onError={(e) => {
+                      // Log the error and replace with a lightweight placeholder from the public folder
+                      try {
+                        // eslint-disable-next-line no-console
+                        console.error(`Failed to load project image: ${p.image}`)
+                      } catch (err) {}
+                      const target = e.currentTarget
+                      target.onerror = null
+                      target.src = '/Images/placeholder.svg'
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
                   <div className="absolute top-3 left-3">
