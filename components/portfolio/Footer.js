@@ -6,7 +6,6 @@ import BrandMark from './BrandMark'
 const FOOTER_LINKS = [
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
-  { name: 'Industries', href: '#industries' },
   { name: 'Technologies', href: '#technology' },
   { name: 'Portfolio', href: '#portfolio' },
   { name: 'Process', href: '#process' },

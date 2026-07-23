@@ -8,7 +8,7 @@ The project is implemented as a React/Next.js front-end with a lightweight API l
 
 ### What is implemented today
 - A full-screen animated landing experience with scroll-based navigation
-- Multiple portfolio sections: Hero, About, Services, Technology, Industries, Portfolio, Process, CTA, Contact, Footer
+- Multiple portfolio sections: Hero, About, Services, Technology, Portfolio, Process, CTA, Contact, Footer
 - Dynamic project filtering and media fallbacks
 - A contact form that submits to a Next.js API route
 - A MongoDB-backed API for contact and newsletter persistence

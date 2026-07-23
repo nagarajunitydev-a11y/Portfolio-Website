@@ -6,7 +6,6 @@ import Hero from '@/components/portfolio/Hero'
 import About from '@/components/portfolio/About'
 import Services from '@/components/portfolio/Services'
 import Technology from '@/components/portfolio/Technology'
-import Industries from '@/components/portfolio/Industries'
 import Portfolio from '@/components/portfolio/Portfolio'
 import Highlights from '@/components/portfolio/Highlights'
 import Process from '@/components/portfolio/Process'
@@ -29,7 +28,6 @@ function App() {
       <About />
       <Services />
       <Technology />
-      <Industries />
       <Portfolio />
       <Highlights />
       <Process />

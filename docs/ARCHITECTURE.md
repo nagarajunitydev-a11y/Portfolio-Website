@@ -30,7 +30,7 @@ flowchart TD
 
 ### Content layer
 - [lib/portfolio/data.js](../lib/portfolio/data.js) acts as the central content repository.
-- It defines studio metadata, navigation links, services, process steps, industries, skills, testimonials, and project data.
+- It defines studio metadata, navigation links, services, process steps, skills, testimonials, and project data.
 
 ### Section components
 - [components/portfolio/Navbar.js](../components/portfolio/Navbar.js) manages active-section highlighting and mobile menu state.

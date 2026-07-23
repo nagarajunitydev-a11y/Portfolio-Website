@@ -24,9 +24,9 @@ The about section presents the studio positioning, values, and expertise tags. I
 
 This section advertises service categories and a configurable launch experience. It surfaces a live demo button for the automotive configurator experience.
 
-## 6. Technology and Industry Sections
+## 6. Technology Section
 
-These sections provide a structured overview of tools, platforms, and markets the studio serves.
+This section provides a structured overview of tools and platforms the studio serves.
 
 ## 7. Project Portfolio
 
