@@ -34,7 +34,7 @@ function ServiceCard({ service, index, isActive, onToggle }) {
 
         <div className="mt-6">
           <h3 className="text-xl font-semibold tracking-tight text-white">{service.title}</h3>
-          <p className="mt-3 text-sm leading-7 text-[#A0A0A0]">{service.description}</p>
+          <p className="mt-3 text-sm leading-7 text-[#B8B8B8]">{service.description}</p>
         </div>
 
         <div className="mt-8 flex-1">
@@ -78,8 +78,8 @@ function ServiceCard({ service, index, isActive, onToggle }) {
         </div>
 
         <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-5">
-          <span className="text-xs uppercase tracking-[0.28em] text-[#A0A0A0]">Focused execution</span>
-          <ArrowUpRight className="text-[#A0A0A0] transition duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#F4D97C]" size={18} />
+          <span className="text-xs uppercase tracking-[0.28em] text-[#B8B8B8]">Focused execution</span>
+          <ArrowUpRight className="text-[#B8B8B8] transition duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#F4D97C]" size={18} />
         </div>
 
         {isConfig && (
@@ -117,7 +117,7 @@ export default function Services() {
           subtitle="From AI strategy to immersive digital experiences, we help ambitious teams modernize operations, accelerate product delivery, and create memorable customer experiences."
         />
 
-        <div className="mt-12 flex flex-wrap gap-3 text-sm text-[#A0A0A0]">
+        <div className="mt-12 flex flex-wrap gap-3 text-sm text-[#B8B8B8]">
           <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5">AI-led delivery</span>
           <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5">Enterprise-grade engineering</span>
           <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5">Immersive product experiences</span>
@@ -147,7 +147,7 @@ export default function Services() {
               <p className="text-[11px] uppercase tracking-[0.3em] text-[#F4D97C]">Our delivery approach</p>
               <h3 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">A disciplined path from strategy to launch</h3>
             </div>
-            <p className="max-w-xl text-sm leading-7 text-[#A0A0A0]">
+            <p className="max-w-xl text-sm leading-7 text-[#B8B8B8]">
               Every engagement follows a clear, collaborative process designed to reduce risk and accelerate outcomes.
             </p>
           </div>
@@ -167,7 +167,7 @@ export default function Services() {
                   <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#7C3AED]" />
                 </div>
                 <h4 className="mt-4 text-sm font-semibold text-white">{step.title}</h4>
-                <p className="mt-2 text-sm leading-6 text-[#A0A0A0]">{step.detail}</p>
+                <p className="mt-2 text-sm leading-6 text-[#B8B8B8]">{step.detail}</p>
               </div>
             ))}
           </div>

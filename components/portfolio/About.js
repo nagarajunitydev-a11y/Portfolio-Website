@@ -189,7 +189,7 @@ export default function About() {
                         <Icon size={18} />
                       </div>
                       <h3 className="mt-4 text-sm font-semibold text-white">{item.title}</h3>
-                      <p className="mt-2 text-sm leading-6 text-[#A0A0A0]">{item.description}</p>
+                      <p className="mt-2 text-sm leading-6 text-[#B8B8B8]">{item.description}</p>
                     </div>
                   )
                 })}
@@ -307,7 +307,7 @@ export default function About() {
                   <Lightbulb size={20} />
                 </div>
                 <h4 className="mt-5 text-lg font-semibold text-white">{item.title}</h4>
-                <p className="mt-3 text-sm leading-7 text-[#A0A0A0]">{item.text}</p>
+                <p className="mt-3 text-sm leading-7 text-[#B8B8B8]">{item.text}</p>
               </div>
             ))}
           </FadeUp>
@@ -340,7 +340,7 @@ export default function About() {
                     <Icon size={20} />
                   </div>
                   <h4 className="mt-5 text-lg font-semibold text-white">{feature.title}</h4>
-                  <p className="mt-3 text-sm leading-7 text-[#A0A0A0]">{feature.description}</p>
+                  <p className="mt-3 text-sm leading-7 text-[#B8B8B8]">{feature.description}</p>
                 </motion.div>
               )
             })}
@@ -374,7 +374,7 @@ export default function About() {
                     <Icon size={20} />
                   </div>
                   <h4 className="mt-5 text-lg font-semibold text-white">{value.title}</h4>
-                  <p className="mt-3 text-sm leading-7 text-[#A0A0A0]">{value.description}</p>
+                  <p className="mt-3 text-sm leading-7 text-[#B8B8B8]">{value.description}</p>
                 </motion.div>
               )
             })}

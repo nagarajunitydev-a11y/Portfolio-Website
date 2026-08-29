@@ -41,7 +41,7 @@ export default function Process() {
                       <span className="text-xs tracking-[0.3em] text-[#F4D97C]/80">{p.step}</span>
                     </div>
                     <h3 className="mt-4 text-lg font-semibold text-white tracking-tight">{p.title}</h3>
-                    <p className="mt-1 text-sm text-[#A0A0A0] leading-relaxed">{p.text}</p>
+                    <p className="mt-1 text-sm text-[#B8B8B8] leading-relaxed">{p.text}</p>
                   </div>
                 </motion.div>
               )

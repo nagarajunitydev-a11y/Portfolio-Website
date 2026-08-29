@@ -26,7 +26,7 @@ export default function CTA() {
               <h2 className="h-display text-4xl md:text-5xl font-bold text-white tracking-tight">
                 Let&apos;s build something <span className="text-gradient">extraordinary.</span>
               </h2>
-              <p className="mt-5 text-[#A0A0A0] text-lg leading-relaxed">
+              <p className="mt-5 text-[#B8B8B8] text-lg leading-relaxed">
                 Whether you&apos;re building an AI platform, enterprise application, immersive WebXR experience or
                 cinematic CGI production — our team is ready to transform your vision into reality.
               </p>

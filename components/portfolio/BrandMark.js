@@ -18,8 +18,8 @@ export default function BrandMark({
         width={56}
         height={56}
         priority
-        className={`h-8 w-auto shrink-0 object-contain sm:h-9 md:h-10 ${iconClassName}`}
-        sizes="(max-width: 768px) 32px, 40px"
+        className={`h-10 w-auto shrink-0 object-contain sm:h-12 md:h-14 ${iconClassName}`}
+        sizes="(max-width: 768px) 40px, 56px"
       />
       {showName && (
         <Image
@@ -28,8 +28,8 @@ export default function BrandMark({
           width={180}
           height={56}
           priority
-          className={`h-4 w-auto max-w-[96px] object-contain sm:h-5 sm:max-w-[112px] md:h-6 md:max-w-[140px] ${nameClassName}`}
-          sizes="(max-width: 768px) 96px, 140px"
+          className={`h-6 w-auto max-w-[150px] object-contain sm:h-7 sm:max-w-[180px] md:h-8 md:max-w-[210px] ${nameClassName}`}
+          sizes="(max-width: 768px) 150px, 210px"
         />
       )}
     </div>

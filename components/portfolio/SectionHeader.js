@@ -29,7 +29,7 @@ export default function SectionHeader({ eyebrow, title, subtitle, align = 'left'
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="mt-5 text-[#A8A8A8] text-lg leading-relaxed"
+          className="mt-5 text-[#C0C0C0] text-lg leading-relaxed"
         >
           {subtitle}
         </motion.p>

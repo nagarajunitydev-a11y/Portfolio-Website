@@ -53,7 +53,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`relative px-3.5 py-2 text-[13px] rounded-full transition-colors ${
-                  active === link.href ? 'text-white' : 'text-[#A0A0A0] hover:text-white'
+                  active === link.href ? 'text-white' : 'text-[#B8B8B8] hover:text-white'
                 }`}
               >
                 {active === link.href && (
@@ -102,7 +102,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className={`px-4 py-3 rounded-xl text-sm ${
-                    active === link.href ? 'bg-white/5 text-white' : 'text-[#A0A0A0]'
+                    active === link.href ? 'bg-white/5 text-white' : 'text-[#B8B8B8]'
                   }`}
                 >
                   {link.name}

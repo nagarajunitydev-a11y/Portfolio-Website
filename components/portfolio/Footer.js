@@ -21,13 +21,13 @@ export default function Footer() {
           <div>
             <div className="text-xs uppercase tracking-widest text-[#F4D97C] mb-2">Newsletter</div>
             <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">Insights from our team, monthly.</h3>
-            <p className="text-[#A0A0A0] mt-1 text-sm">Deep-dives on AI, XR and craft — no spam, unsubscribe anytime.</p>
+            <p className="text-[#B8B8B8] mt-1 text-sm">Deep-dives on AI, XR and craft — no spam, unsubscribe anytime.</p>
           </div>
           <form className="flex w-full md:w-auto gap-2" onSubmit={(e) => e.preventDefault()}>
             <input
               type="email"
               placeholder="you@company.com"
-              className="flex-1 md:w-80 px-4 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white placeholder:text-[#A0A0A0]/60 focus:outline-none focus:border-[#D4AF37]/60"
+              className="flex-1 md:w-80 px-4 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white placeholder:text-[#B8B8B8]/60 focus:outline-none focus:border-[#D4AF37]/60"
             />
             <button
               type="submit"
@@ -43,7 +43,7 @@ export default function Footer() {
             <a href="#home" className="inline-flex items-center">
               <BrandMark className="justify-start" />
             </a>
-            <p className="mt-4 text-sm text-[#A0A0A0] max-w-sm leading-relaxed">
+            <p className="mt-4 text-sm text-[#B8B8B8] max-w-sm leading-relaxed">
               We build AI-powered software, immersive WebXR experiences and photorealistic CGI — for startups, enterprises and global brands.
             </p>
             <div className="mt-6 flex items-center gap-3">
@@ -57,7 +57,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="h-9 w-9 rounded-lg glass border border-white/10 flex items-center justify-center text-[#A0A0A0] hover:text-white hover:border-[#D4AF37]/40 transition-all"
+                  className="h-9 w-9 rounded-lg glass border border-white/10 flex items-center justify-center text-[#B8B8B8] hover:text-white hover:border-[#D4AF37]/40 transition-all"
                 >
                   <Icon size={15} />
                 </a>
@@ -69,7 +69,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {FOOTER_LINKS.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-sm text-[#A0A0A0] hover:text-white transition-colors">
+                  <a href={l.href} className="text-sm text-[#B8B8B8] hover:text-white transition-colors">
                     {l.name}
                   </a>
                 </li>
@@ -79,21 +79,21 @@ export default function Footer() {
           <div>
             <div className="text-xs uppercase tracking-widest text-[#F4D97C] mb-4">Legal</div>
             <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-[#A0A0A0] hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-sm text-[#A0A0A0] hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-sm text-[#A0A0A0] hover:text-white transition-colors">Cookies</a></li>
-              <li><a href={`mailto:${STUDIO.email}`} className="text-sm text-[#A0A0A0] hover:text-white transition-colors">Email Us</a></li>
+              <li><a href="#" className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Cookies</a></li>
+              <li><a href={`mailto:${STUDIO.email}`} className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Email Us</a></li>
             </ul>
           </div>
         </div>
 
         <div className="mt-16 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-xs text-[#A0A0A0]">
+          <div className="text-xs text-[#B8B8B8]">
             © {new Date().getFullYear()} {STUDIO.name}. Crafted by our team with obsession.
           </div>
           <a
             href="#home"
-            className="inline-flex items-center gap-2 text-xs text-[#A0A0A0] hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-xs text-[#B8B8B8] hover:text-white transition-colors"
           >
             Back to top <ArrowUp size={14} />
           </a>

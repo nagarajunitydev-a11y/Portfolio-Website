@@ -32,7 +32,7 @@ export default function Portfolio() {
               className={`relative px-4 py-2 rounded-full text-sm transition-all ${
                 filter === c
                   ? 'text-black font-semibold'
-                  : 'text-[#A0A0A0] hover:text-white border border-white/10 hover:border-white/30'
+                  : 'text-[#B8B8B8] hover:text-white border border-white/10 hover:border-white/30'
               }`}
             >
               {filter === c && (
@@ -121,12 +121,12 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold text-white group-hover:text-[#F4D97C] transition-colors tracking-tight">
                     {p.title}
                   </h3>
-                  <p className="text-sm text-[#A0A0A0] mt-1 line-clamp-2">{p.description}</p>
+                  <p className="text-sm text-[#B8B8B8] mt-1 line-clamp-2">{p.description}</p>
                   <div className="mt-4 flex flex-wrap gap-1.5">
                     {p.tech.map((t) => (
                       <span
                         key={t}
-                        className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/[0.03] border border-white/10 text-[#A0A0A0]"
+                        className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/[0.03] border border-white/10 text-[#B8B8B8]"
                       >
                         {t}
                       </span>

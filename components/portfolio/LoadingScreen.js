@@ -36,7 +36,7 @@ export default function LoadingScreen() {
               </div>
             </motion.div>
             <BrandMark className="justify-center" />
-            <div className="text-xs tracking-[0.4em] text-[#A8A8A8] uppercase">Loading experience</div>
+            <div className="text-xs tracking-[0.4em] text-[#C0C0C0] uppercase">Loading experience</div>
           </div>
         </motion.div>
       )}

@@ -38,7 +38,7 @@ export default function Experience() {
                     </div>
                     <h3 className="mt-2 text-xl font-semibold text-white">{e.role}</h3>
                     <div className="text-sm text-[#7C3AED] font-medium">{e.company}</div>
-                    <p className="mt-3 text-sm text-[#A8A8A8] leading-relaxed">{e.description}</p>
+                    <p className="mt-3 text-sm text-[#C0C0C0] leading-relaxed">{e.description}</p>
                     <ul className="mt-4 space-y-1.5">
                       {e.achievements.map((a) => (
                         <li key={a} className="text-sm text-white/80 flex items-start gap-2">
@@ -51,7 +51,7 @@ export default function Experience() {
                       {e.tech.map((t) => (
                         <span
                           key={t}
-                          className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/[0.03] border border-white/10 text-[#A8A8A8]"
+                          className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/[0.03] border border-white/10 text-[#C0C0C0]"
                         >
                           {t}
                         </span>
@@ -84,10 +84,10 @@ export default function Experience() {
               >
                 <div className="flex items-start justify-between">
                   <Award className="text-[#F4D97C]" size={22} />
-                  <ExternalLink size={16} className="text-[#A8A8A8] group-hover:text-white transition-colors" />
+                  <ExternalLink size={16} className="text-[#C0C0C0] group-hover:text-white transition-colors" />
                 </div>
                 <div className="mt-4 text-white font-medium text-sm">{c.name}</div>
-                <div className="text-xs text-[#A8A8A8] mt-1">{c.org}</div>
+                <div className="text-xs text-[#C0C0C0] mt-1">{c.org}</div>
                 <div className="text-xs text-[#7C3AED] mt-2">{c.date}</div>
               </motion.a>
             ))}

@@ -55,14 +55,14 @@ export default function Contact() {
           <div className="lg:col-span-5 space-y-4">
             <div className="glass-strong border-glow rounded-3xl p-8">
               <h3 className="text-2xl font-semibold text-white">Contact info</h3>
-              <p className="text-sm text-[#A8A8A8] mt-2">Reach out through any of these channels.</p>
+              <p className="text-sm text-[#C0C0C0] mt-2">Reach out through any of these channels.</p>
               <div className="mt-8 space-y-5">
                 <a href={`mailto:${PROFILE.email}`} className="flex items-center gap-4 group">
                   <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-[#D4AF37]/20 to-[#7C3AED]/20 border border-white/10 flex items-center justify-center text-[#D4AF37] group-hover:scale-110 transition-transform">
                     <Mail size={18} />
                   </div>
                   <div>
-                    <div className="text-xs uppercase tracking-widest text-[#A8A8A8]">Email</div>
+                    <div className="text-xs uppercase tracking-widest text-[#C0C0C0]">Email</div>
                     <div className="text-white group-hover:text-[#D4AF37] transition-colors">{PROFILE.email}</div>
                   </div>
                 </a>
@@ -71,7 +71,7 @@ export default function Contact() {
                     <Phone size={18} />
                   </div>
                   <div>
-                    <div className="text-xs uppercase tracking-widest text-[#A8A8A8]">Phone</div>
+                    <div className="text-xs uppercase tracking-widest text-[#C0C0C0]">Phone</div>
                     <div className="text-white group-hover:text-[#7C3AED] transition-colors">{PROFILE.phone}</div>
                   </div>
                 </a>
@@ -89,7 +89,7 @@ export default function Contact() {
                     href={href}
                     aria-label={label}
 
-                    className="h-10 w-10 rounded-xl glass border border-white/10 flex items-center justify-center text-[#A8A8A8] hover:text-white hover:border-[#D4AF37]/40 transition-all"
+                    className="h-10 w-10 rounded-xl glass border border-white/10 flex items-center justify-center text-[#C0C0C0] hover:text-white hover:border-[#D4AF37]/40 transition-all"
                   >
                     <Icon size={16} />
                   </a>
@@ -106,7 +106,7 @@ export default function Contact() {
               >
                 <Calendar className="text-[#D4AF37]" size={18} />
                 <div>
-                  <div className="text-xs text-[#A8A8A8]">Schedule</div>
+                  <div className="text-xs text-[#C0C0C0]">Schedule</div>
                   <div className="text-sm text-white font-medium">Book a call</div>
                 </div>
               </a>
@@ -117,7 +117,7 @@ export default function Contact() {
               >
                 <MessageCircle className="text-[#F4D97C]" size={18} />
                 <div>
-                  <div className="text-xs text-[#A8A8A8]">WhatsApp</div>
+                  <div className="text-xs text-[#C0C0C0]">WhatsApp</div>
                   <div className="text-sm text-white font-medium">Chat now</div>
                 </div>
               </a>
@@ -137,46 +137,46 @@ export default function Contact() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
-                <label className="text-xs uppercase tracking-widest text-[#A8A8A8]">Name</label>
+                <label className="text-xs uppercase tracking-widest text-[#C0C0C0]">Name</label>
                 <input
                   name="name"
                   value={form.name}
                   onChange={change}
                   placeholder="Your full name"
-                  className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#A8A8A8]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all"
+                  className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#C0C0C0]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all"
                 />
               </div>
               <div>
-                <label className="text-xs uppercase tracking-widest text-[#A8A8A8]">Email</label>
+                <label className="text-xs uppercase tracking-widest text-[#C0C0C0]">Email</label>
                 <input
                   name="email"
                   type="email"
                   value={form.email}
                   onChange={change}
                   placeholder="you@company.com"
-                  className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#A8A8A8]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all"
+                  className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#C0C0C0]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all"
                 />
               </div>
             </div>
             <div>
-              <label className="text-xs uppercase tracking-widest text-[#A8A8A8]">Subject</label>
+              <label className="text-xs uppercase tracking-widest text-[#C0C0C0]">Subject</label>
               <input
                 name="subject"
                 value={form.subject}
                 onChange={change}
                 placeholder="Project inquiry, collaboration, etc."
-                className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#A8A8A8]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all"
+                className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#C0C0C0]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all"
               />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-widest text-[#A8A8A8]">Message</label>
+              <label className="text-xs uppercase tracking-widest text-[#C0C0C0]">Message</label>
               <textarea
                 name="message"
                 value={form.message}
                 onChange={change}
                 rows={6}
                 placeholder="Tell me about your project, goals and timeline..."
-                className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#A8A8A8]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all resize-none"
+                className="mt-2 w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder:text-[#C0C0C0]/60 focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/[0.05] transition-all resize-none"
               />
             </div>
 
@@ -209,7 +209,7 @@ export default function Contact() {
               <span className="absolute inset-0 bg-gradient-to-r from-[#F4D97C] to-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-0" />
             </button>
 
-            <p className="text-xs text-[#A8A8A8]/70">
+            <p className="text-xs text-[#C0C0C0]/70">
               By submitting, you agree to be contacted via email regarding your inquiry.
             </p>
           </motion.form>

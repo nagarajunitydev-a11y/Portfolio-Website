@@ -33,7 +33,7 @@ export default function Skills() {
                   <div key={s.name}>
                     <div className="flex items-center justify-between text-sm mb-1.5">
                       <span className="text-white/90">{s.name}</span>
-                      <span className="text-[#A8A8A8] text-xs">{s.level}%</span>
+                      <span className="text-[#C0C0C0] text-xs">{s.level}%</span>
                     </div>
                     <div className="h-1.5 rounded-full bg-white/5 overflow-hidden">
                       <motion.div

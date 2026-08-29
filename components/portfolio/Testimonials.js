@@ -53,7 +53,7 @@ export default function Testimonials() {
                 />
                 <div className="text-left">
                   <div className="text-white font-semibold">{item.name}</div>
-                  <div className="text-sm text-[#A8A8A8]">
+                  <div className="text-sm text-[#C0C0C0]">
                     {item.role} · <span className="text-[#7C3AED]">{item.company}</span>
                   </div>
                 </div>

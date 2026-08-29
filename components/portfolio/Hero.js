@@ -43,7 +43,7 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F4D97C] opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F4D97C]" />
           </span>
-          <span className="text-xs text-[#A0A0A0] tracking-[0.25em] uppercase">
+          <span className="text-xs text-[#B8B8B8] tracking-[0.25em] uppercase">
             AI · WebXR · Engineering · CGI Studio
           </span>
         </motion.div>
@@ -63,7 +63,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 0.8 }}
-          className="mt-8 max-w-2xl text-lg md:text-xl text-[#A0A0A0] leading-relaxed"
+          className="mt-8 max-w-2xl text-lg md:text-xl text-[#B8B8B8] leading-relaxed"
         >
           We help startups, enterprises and global brands build
           <span className="text-white"> AI-powered applications</span>,
@@ -102,7 +102,7 @@ export default function Hero() {
         transition={{ delay: 1.5 }}
         className="absolute bottom-24 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
       >
-        <span className="text-[10px] tracking-[0.3em] text-[#A0A0A0] uppercase">Scroll</span>
+        <span className="text-[10px] tracking-[0.3em] text-[#B8B8B8] uppercase">Scroll</span>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
@@ -115,7 +115,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 border-t border-white/5 bg-black/40 backdrop-blur-md py-4 overflow-hidden">
         <div className="flex marquee gap-12 whitespace-nowrap">
           {[...TECH_STACK, ...TECH_STACK].map((t, i) => (
-            <span key={i} className="text-sm text-[#A0A0A0] hover:text-white transition-colors flex items-center gap-3">
+            <span key={i} className="text-sm text-[#B8B8B8] hover:text-white transition-colors flex items-center gap-3">
               <span className="h-1 w-1 rounded-full bg-[#D4AF37]" />
               {t}
             </span>
