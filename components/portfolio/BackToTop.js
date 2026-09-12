@@ -20,10 +20,9 @@ export default function BackToTop() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 z-40 h-12 w-12 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#7C3AED] text-black flex items-center justify-center shadow-lg"
-          style={{ boxShadow: '0 10px 40px rgba(212, 175, 55,0.4)' }}
+          className="glass-nav fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full text-[hsl(var(--ink))] transition-colors hover:border-[hsl(var(--accent)/0.4)]"
         >
-          <ArrowUp size={18} />
+          <ArrowUp size={17} aria-hidden="true" />
         </motion.button>
       )}
     </AnimatePresence>

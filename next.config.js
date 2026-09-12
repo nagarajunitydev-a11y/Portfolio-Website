@@ -4,6 +4,9 @@ const nextConfig = {
     unoptimized: true,
     remotePatterns: [
       { protocol: 'https', hostname: 'avatars.githubusercontent.com', pathname: '/**' },
+      // Editorial photography. Note `unoptimized: true` above means Next does not
+      // resize these — sizing is done with Unsplash CDN params in lib/portfolio/media.js.
+      { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
     ],
   },
   // Renamed from experimental.serverComponentsExternalPackages in Next 15

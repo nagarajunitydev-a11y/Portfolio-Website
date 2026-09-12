@@ -18,9 +18,22 @@ module.exports = {
       },
       extend: {
         fontFamily: {
-          sans: ['var(--font-poppins)', 'Poppins', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
         },
         colors: {
+          ink: {
+            DEFAULT: 'hsl(var(--ink))',
+            2: 'hsl(var(--ink-2))',
+            3: 'hsl(var(--ink-3))',
+          },
+          surface: {
+            DEFAULT: 'hsl(var(--surface))',
+            2: 'hsl(var(--surface-2))',
+          },
+          accent2: {
+            DEFAULT: 'hsl(var(--accent))',
+            soft: 'hsl(var(--accent-soft))',
+          },
           border: 'hsl(var(--border))',
           input: 'hsl(var(--input))',
           ring: 'hsl(var(--ring))',

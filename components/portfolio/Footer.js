@@ -1,102 +1,122 @@
 'use client'
-import { STUDIO, NAV_LINKS } from '@/lib/portfolio/data'
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react'
+import { Github, Linkedin, Twitter, ArrowUp } from 'lucide-react'
 import BrandMark from './BrandMark'
+import { STUDIO, NAV_LINKS, SERVICES } from '@/lib/portfolio/data'
 
-const FOOTER_LINKS = [
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Technologies', href: '#technology' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Process', href: '#process' },
-  { name: 'Contact', href: '#contact' },
+const SOCIAL = [
+  { icon: Github, href: STUDIO.github, label: 'GitHub' },
+  { icon: Linkedin, href: STUDIO.linkedin, label: 'LinkedIn' },
+  { icon: Twitter, href: STUDIO.twitter, label: 'Twitter' },
+]
+
+const LEGAL = [
+  { name: 'Privacy Policy', href: '#contact' },
+  { name: 'Terms of Service', href: '#contact' },
+  { name: 'Accessibility', href: '#contact' },
 ]
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5 mt-10">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.05),transparent_50%)]" />
-      <div className="relative max-w-7xl mx-auto px-6 py-16">
-        <div className="glass-strong border-glow rounded-3xl p-8 md:p-12 mb-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+    <footer className="border-t border-[hsl(var(--line)/0.08)] px-5 py-16 sm:px-8 lg:px-10">
+      <div className="mx-auto w-full max-w-6xl">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
-            <div className="text-xs uppercase tracking-widest text-[#F4D97C] mb-2">Newsletter</div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">Insights from our team, monthly.</h3>
-            <p className="text-[#B8B8B8] mt-1 text-sm">Deep-dives on AI, XR and craft — no spam, unsubscribe anytime.</p>
-          </div>
-          <form className="flex w-full md:w-auto gap-2" onSubmit={(e) => e.preventDefault()}>
-            <input
-              type="email"
-              placeholder="you@company.com"
-              className="flex-1 md:w-80 px-4 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white placeholder:text-[#B8B8B8]/60 focus:outline-none focus:border-[#D4AF37]/60"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#F4D97C] text-black font-semibold"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-          <div className="col-span-2">
-            <a href="#home" className="inline-flex items-center">
-              <BrandMark className="justify-start" />
-            </a>
-            <p className="mt-4 text-sm text-[#B8B8B8] max-w-sm leading-relaxed">
-              We build AI-powered software, immersive WebXR experiences and photorealistic CGI — for startups, enterprises and global brands.
-            </p>
-            <div className="mt-6 flex items-center gap-3">
-              {[
-                { icon: Github, href: STUDIO.github, label: 'GitHub' },
-                { icon: Linkedin, href: STUDIO.linkedin, label: 'LinkedIn' },
-                { icon: Twitter, href: STUDIO.twitter, label: 'Twitter' },
-                { icon: Mail, href: `mailto:${STUDIO.email}`, label: 'Email' },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  className="h-9 w-9 rounded-lg glass border border-white/10 flex items-center justify-center text-[#B8B8B8] hover:text-white hover:border-[#D4AF37]/40 transition-all"
-                >
-                  <Icon size={15} />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className="text-xs uppercase tracking-widest text-[#F4D97C] mb-4">Navigate</div>
-            <ul className="space-y-2">
-              {FOOTER_LINKS.map((l) => (
-                <li key={l.href}>
-                  <a href={l.href} className="text-sm text-[#B8B8B8] hover:text-white transition-colors">
-                    {l.name}
+            <BrandMark size="lg" />
+            <p className="t-body mt-5 max-w-xs">{STUDIO.tagline}</p>
+            <ul className="mt-6 flex items-center gap-2">
+              {SOCIAL.map(({ icon: Icon, href, label }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    aria-label={label}
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[hsl(var(--line)/0.1)] text-[hsl(var(--ink-2))] transition-colors hover:border-[hsl(var(--accent)/0.4)] hover:text-[hsl(var(--ink))]"
+                  >
+                    <Icon size={15} aria-hidden="true" />
                   </a>
                 </li>
               ))}
             </ul>
           </div>
+
+          <nav aria-label="Footer navigation">
+            <h2 className="t-eyebrow">Company</h2>
+            <ul className="mt-5 space-y-3">
+              {NAV_LINKS.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    className="text-sm text-[hsl(var(--ink-2))] transition-colors hover:text-[hsl(var(--ink))]"
+                  >
+                    {l.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
           <div>
-            <div className="text-xs uppercase tracking-widest text-[#F4D97C] mb-4">Legal</div>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Cookies</a></li>
-              <li><a href={`mailto:${STUDIO.email}`} className="text-sm text-[#B8B8B8] hover:text-white transition-colors">Email Us</a></li>
+            <h2 className="t-eyebrow">Solutions</h2>
+            <ul className="mt-5 space-y-3">
+              {SERVICES.map((s) => (
+                <li key={s.id}>
+                  <a
+                    href="#services"
+                    className="text-sm text-[hsl(var(--ink-2))] transition-colors hover:text-[hsl(var(--ink))]"
+                  >
+                    {s.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="t-eyebrow">Contact</h2>
+            <ul className="mt-5 space-y-3">
+              <li>
+                <a
+                  href={`mailto:${STUDIO.email}`}
+                  className="break-all text-sm text-[hsl(var(--ink-2))] transition-colors hover:text-[hsl(var(--ink))]"
+                >
+                  {STUDIO.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${STUDIO.phone}`}
+                  className="text-sm text-[hsl(var(--ink-2))] transition-colors hover:text-[hsl(var(--ink))]"
+                >
+                  {STUDIO.phone}
+                </a>
+              </li>
+              <li className="text-sm text-[hsl(var(--ink-3))]">{STUDIO.location}</li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-16 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-xs text-[#B8B8B8]">
-            © {new Date().getFullYear()} {STUDIO.name}. Crafted by our team with obsession.
-          </div>
-          <a
-            href="#home"
-            className="inline-flex items-center gap-2 text-xs text-[#B8B8B8] hover:text-white transition-colors"
-          >
-            Back to top <ArrowUp size={14} />
-          </a>
+        <div className="mt-16 flex flex-col gap-4 border-t border-[hsl(var(--line)/0.08)] pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="t-meta">
+            © {new Date().getFullYear()} {STUDIO.name}. All rights reserved.
+          </p>
+
+          <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            {LEGAL.map((l) => (
+              <li key={l.name}>
+                <a href={l.href} className="t-meta transition-colors hover:text-[hsl(var(--ink))]">
+                  {l.name}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a
+                href="#hero"
+                className="t-meta inline-flex items-center gap-1.5 transition-colors hover:text-[hsl(var(--ink))]"
+              >
+                Back to top
+                <ArrowUp size={12} aria-hidden="true" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
